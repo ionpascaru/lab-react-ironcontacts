@@ -1,4 +1,5 @@
 import React from 'react'
+import './ContactList.css'
 
 const Controls = ({ onClickSortContacts, onClickRandomContact, sortedBy }) => {
   return (
@@ -8,7 +9,7 @@ const Controls = ({ onClickSortContacts, onClickRandomContact, sortedBy }) => {
         className="btn btn-secondary"
         onClick={onClickRandomContact}
       >
-        +
+       + Add Random Contact
       </button>
 
       <button
@@ -16,7 +17,7 @@ const Controls = ({ onClickSortContacts, onClickRandomContact, sortedBy }) => {
         className={"btn btn-secondary " + (sortedBy === 'name' && 'active')}
         onClick={() => onClickSortContacts('name')}
       >
-        Name
+        Sort by Name
       </button>
 
       <button
@@ -24,7 +25,7 @@ const Controls = ({ onClickSortContacts, onClickRandomContact, sortedBy }) => {
         className={"btn btn-secondary " + (sortedBy === 'popularity' && 'active')}
         onClick={() => onClickSortContacts('popularity')}
       >
-        Popularity
+        Sort by Popularity
       </button>
     </div>
   )

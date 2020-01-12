@@ -1,13 +1,14 @@
 import React from 'react';
+import logo from '../../logo.svg';
+import './Header.css'
 
 const Header = () => {
   return (
-    <div className="jumbotron jumbotron-fluid">
-      <div className="container">
-        <h1 className="display-4">Iron Contacts</h1>
-      </div>
-    </div>
-  );
-};
+    <header className="Header">
+      <img src={logo} className="logo" alt="logo" />
+      <h1 className="title">IRON CONTACTS</h1>
+    </header>
+  )
+}
 
 export default Header;
