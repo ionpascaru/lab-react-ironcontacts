@@ -5,7 +5,6 @@ const Header = () => {
     <div className="jumbotron jumbotron-fluid">
       <div className="container">
         <h1 className="display-4">Iron Contacts</h1>
-        <p className="lead">React component state tutorial</p>
       </div>
     </div>
   );
